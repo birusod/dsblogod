@@ -1,19 +1,18 @@
 ---
 title: "About"
-image: profile.jpg
+image: profile1.png
 about:
   template: jolla
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/birusod
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/diallooumarou/
     - icon: github
       text: Github
-      href: https://github.com
-
+      href: https://github.com/birusod
 ---
 
-About this blog
+An amateur data scientist journey!
