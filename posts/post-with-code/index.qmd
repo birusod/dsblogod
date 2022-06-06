@@ -9,15 +9,17 @@ image: "image.jpg"
 This is a post with executable code for test.
 
 ```{r message=FALSE}
-library(tidyverse)
-library(palmerpenguins)
+library(pacman)
+p_load(tidyverse, palmerpenguins, knitr)
 ```
 
 Load a dataset:
 
 ```{r}
 data(penguins)
-penguins |> head(10) |> knitr::kable()
+penguins |> 
+  head(10) |> 
+  kable()
 ```
 
 Plotting

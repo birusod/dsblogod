@@ -1,8 +1,10 @@
 {
-  "hash": "269d3c2dce3530241b1750350e519086",
+  "hash": "417aabcc6c536bef14afd4f4c1a1d241",
   "result": {
-    "markdown": "---\ntitle: \"Post With Code\"\nauthor: \"Harlow Malloc\"\ndate: \"2022-06-05\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\n\nThis is a post with executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Post With Code\"\nauthor: \"Oumar Diallo\"\ndate: \"2022-06-05\"\ncategories: [news, code, analysis]\nimage: \"image.jpg\"\n---\n\n\nThis is a post with executable code for test.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(pacman)\np_load(tidyverse, palmerpenguins, knitr)\n```\n:::\n\n\nLoad a dataset:\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndata(penguins)\npenguins |> \n  head(10) |> \n  kable()\n```\n\n::: {.cell-output-display}\n|species |island    | bill_length_mm| bill_depth_mm| flipper_length_mm| body_mass_g|sex    | year|\n|:-------|:---------|--------------:|-------------:|-----------------:|-----------:|:------|----:|\n|Adelie  |Torgersen |           39.1|          18.7|               181|        3750|male   | 2007|\n|Adelie  |Torgersen |           39.5|          17.4|               186|        3800|female | 2007|\n|Adelie  |Torgersen |           40.3|          18.0|               195|        3250|female | 2007|\n|Adelie  |Torgersen |             NA|            NA|                NA|          NA|NA     | 2007|\n|Adelie  |Torgersen |           36.7|          19.3|               193|        3450|female | 2007|\n|Adelie  |Torgersen |           39.3|          20.6|               190|        3650|male   | 2007|\n|Adelie  |Torgersen |           38.9|          17.8|               181|        3625|female | 2007|\n|Adelie  |Torgersen |           39.2|          19.6|               195|        4675|male   | 2007|\n|Adelie  |Torgersen |           34.1|          18.1|               193|        3475|NA     | 2007|\n|Adelie  |Torgersen |           42.0|          20.2|               190|        4250|NA     | 2007|\n:::\n:::\n\n\nPlotting\n\n\n::: {.cell}\n\n```{.r .cell-code}\npenguins |> \n  ggplot(aes(bill_length_mm, bill_depth_mm, color = species))+\n  geom_point(size = 2)+\n  ggtitle(\"Scatter Plot with Pinguins Data\")+\n  labs(x = 'Bill length', y = 'Bill depth', color = 'Species')+\n  theme_light()\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nWarning: Removed 2 rows containing missing values (geom_point).\n```\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
