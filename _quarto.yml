@@ -12,6 +12,8 @@ website:
         href: https://twitter.com/birusod
       - icon: linkedin
         href: https://www.linkedin.com/in/diallooumarou/
+      - icon: envelope
+        href: mailto:birusod@gmail.com
 format:
   html:
     theme: vapor
