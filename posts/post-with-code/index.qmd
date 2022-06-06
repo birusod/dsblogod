@@ -1,13 +1,32 @@
 ---
 title: "Post With Code"
-author: "Harlow Malloc"
+author: "Oumar Diallo"
 date: "2022-06-05"
 categories: [news, code, analysis]
 image: "image.jpg"
 ---
 
-This is a post with executable code.
+This is a post with executable code for test.
+
+```{r message=FALSE}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+Load a dataset:
 
 ```{r}
-1 + 1
+data(penguins)
+penguins |> head(10) |> knitr::kable()
+```
+
+Plotting
+
+```{r}
+penguins |> 
+  ggplot(aes(bill_length_mm, bill_depth_mm, color = species))+
+  geom_point(size = 2)+
+  ggtitle("Scatter Plot with Pinguins Data")+
+  labs(x = 'Bill length', y = 'Bill depth', color = 'Species')+
+  theme_light()
 ```
