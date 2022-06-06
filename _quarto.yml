@@ -18,6 +18,8 @@ format:
   html:
     theme: vapor
     css: styles.css
+    smooth-scroll: true
+    
 
 editor: visual
 

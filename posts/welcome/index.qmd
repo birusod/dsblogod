@@ -1,12 +1,12 @@
 ---
 title: "Welcome To My Blog"
-author: "Tristan O'Malley"
+author: "Oumar Diallo"
 date: "2022-06-02"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+Hi!
 
-![](thumbnail.jpg)
+![A classroom in Mopti, Mali, 2008](school_mali.jpeg)
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+My name is Oumar Diallo. I grew up in Mali, West Africa. Now I live in Seattle, WA. Welcome to my blog!
